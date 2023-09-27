@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.btn {
+    color: white;
+    background-color: #E33FAB;
+}
+.navbar{
+    color: white;
+}
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 3px;
+}
+
+.Banner{
+    color: white;
+    background-color: #6100C1;
+    background-size: contain;
+}
+.Banner img{
+    height: 400px;
+    width: auto;
+    bottom: 0;
+}
+
+#Partner img{
+    height: 100px;
+    width: auto;
+}
+.Kegiatan-content {
+    height: fit-content;
+    width: auto;
+    background-image: url(img/BG1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.Kegiatan-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.Kegiatan-content .card-group {
+    max-height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex: wrap;
+}
+.Kegiatan-content .card{
+    height: max-content;
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.Kegiatan-content .card-footer{
+    background-color: #6100C1;
+}
+.Kegiatan-content .card-footer a {
+    color: white;
+    text-decoration: none;
+}
+#Kontak {
+    color: white;
+    background: url('img/BG2.png');
+    background-size: cover; 
+}
+#Kontak .btn {
+    background-color: #6100C1;
+}
+#Info {
+    color: black;
+}
+#Info a{
+    align-items: center;
+    color: #E33FAB;
+    text-decoration: none;
+}
+#footer ul{
+    list-style: none;
+}
