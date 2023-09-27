@@ -3,7 +3,9 @@
     color: white;
     background-color: #E33FAB;
 }
+
 .navbar{
+    background: #6100C1;
     color: white;
 }
 .navbar-nav .nav-link.active {
@@ -12,17 +14,33 @@
     text-underline-offset: 3px;
 }
 
-.Banner{
+.Banner {
+    color: white;
+    background-color: #6100C1;
+    background-size: cover;
+}
+.Banner-logo{
+    height: 500px;
+    width: auto;
+}
+.Banner-content{
+    transform: translateY(60px);
+}
+.fitur-content {
+    padding-top: 20px;
+    color: black;
+}
+
+.Banner2 {
     color: white;
     background-color: #6100C1;
     background-size: contain;
 }
-.Banner img{
-    height: 400px;
+.Banner2 img{
+    height: 500px;
     width: auto;
     bottom: 0;
 }
-
 #Partner img{
     height: 100px;
     width: auto;
@@ -77,4 +95,19 @@
 }
 #footer ul{
     list-style: none;
+}
+#staff .card{
+    border: none;
+}
+#informasi {
+    margin-top: 50px;
+    border: solid red;
+  }
+#informasi img {
+    width: 100%;
+}
+.artikel-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
 }
