@@ -41,6 +41,16 @@
     width: auto;
     bottom: 0;
 }
+.BeritaExt {
+    color: white;
+    background-color: #6100C1;
+}
+.BeritaExt img {
+    width: 100%;
+}
+#Ext-content {
+    transform: translateY(100px);
+}
 #Partner img{
     height: 100px;
     width: auto;
@@ -101,13 +111,39 @@
 }
 #informasi {
     margin-top: 50px;
-    border: solid red;
   }
 #informasi img {
     width: 100%;
 }
-.artikel-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 15px;
+#informasi a{
+    color :#E33FAB
+}
+#informasi .card{
+    text-align: center;
+}
+
+.nav-link.text-deco{
+    color: black;
+    text-decoration-line: underline;
+    text-decoration: #FF6F6F;
+}
+
+.nav-link.active.text-deco {
+    font-weight: bold;
+}
+
+#badge1 {
+    background-color: #6100C1;
+}
+#badge2 {
+    background-color: #FF6F6F;
+}
+.custom-icon {
+    width: 30px;
+    height: 30px;
+    fill: #E33FAB; 
+    background-color: white; 
+    border: 2px solid #E33FAB;
+    border-radius: 50%; 
+    padding: 4px; 
 }

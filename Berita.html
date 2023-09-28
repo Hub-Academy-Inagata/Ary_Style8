@@ -9,7 +9,7 @@
     <link href="custom.js" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container navbar-content d-flex align-items-center">
           <a class="navbar-brand" href="#">
             <img src="img/Frame 3.png">
@@ -52,7 +52,7 @@
                                   dan Pengetahuan Untuk Anda</p>
                             </div>
                             <div class="col-md-6 text-end">
-                                <img src="img/BG0.png">
+                                <img src="img/BG0.png" class="img-fluid">
                             </div>
                         </div>              
                     </div>
@@ -62,43 +62,14 @@
     <main>
           <section>
             <div class="container" id="informasi">
-              <h1>Informasi Terbaru</h1>
+              <h1 class="my-3">Informasi Terbaru</h1>
               <div class="row d-flex align-items-center">
                 <div class="col-lg-12 p-0">
                   <img src="img/bus.png">
                 </div>
                 <div class="col-lg-12 p-0">
-                    <p>Jika anak kita ditanya apa mimpinya pasti jawabnya 
-                        saya ingin kembali belajar di sekolah. Saya ingin bertemu dengan 
-                        teman-teman sekelas saya. begitupun sebagian besar orang tua, mimpi mereka 
-                        adalah melihat anaknya kembali ke aktivitas sekolah secara langsung. Orang tua 
-                        selama ini banyak yang mengaku lelah karena anak-anaknya selama pandemi lebih banyak 
-                        menghabiskan waktu <span id="dots">...</span><span id="more">di depan layar gawainya 
-                        bukan hanya untuk belajar namun juga untuk bermain game. Belum lagi harus menemani 
-                        dan membantu anak-anak belajar sementara pekerjaan di rumah tidaklah sedikit.
-                        Namun perlahan demi perlahan sejak Oktober lalu, beberapa sekolah di Indonesia 
-                        sudah mulai menerapkan Pembelajaran Tatap Muka atau PTM namun secara terbatas termasuk 
-                        di Purwakarta kota saya tercinta. Seminggu sekali anak-anak bersekolah tentunya dengan 
-                        pembatasan jarak ataupun waktu belajar yang mengalami pengurangan.
-                        Sekolah tempat saya mengabdi yaitu SMPN 8 Purwakarta baru di Januari tahun 2022 ini 
-                        akan mulai melaksanakan pembelajaran tatap muka secara terbatas setelah memenuhi persyaratan 
-                        yang ditentukan oleh Pemerintah Daerah dalam hal ini Dinas Pendidikan yang beberapa syaratnya 
-                        antara lain tersedianya fasilitas kesehatan, siswa-siswi serta civitas sekolah yang sudah di 
-                        vaksin dan beberapa persyaratan lainnya.
-                        Karenanya untuk mewujudkan mimpi para siswa yang ingin kembali belajar di sekolah, di hari 
-                        Jumat tanggal 7 Januari 2022 diselenggarakan kegiatan gotong royong membersihkan sekolah yang 
-                        dilaksanakan oleh perwakilan orang tua siswa, perwakilan siswa, perwakilan OSIS dan tentunya 
-                        dilaksanakan juga oleh segenap civitas sekolah baik itu Guru maupun Staff Tata Usaha.
-                        Kegiatan gotong royong membersihkan sekolah tersebut diadakan agar ketika anak kembali ke kelasnya, 
-                        kelasnya sudah dalam keadaan bersih. Seperti yang dikatakan oleh perwakilan orang tua dari kelas 7 
-                        dan 9 yang mengatakan alasan ikut gotong royong membersihkan kelas anaknya agar anaknya dapat belajar 
-                        dengan nyaman dan sehat karena lingkungan kelas maupun sekolahnya yang bersih. Selain itu mengingat salah satu syarat 
-                        bisa diadakan pembelajaran tatap muka adalah lingkungan pembelajaran yang bersih dan sehat. 
-                        Selain membawa peralatan kebersihan masing-masing, ada pula orang tua yang membawa makanan untuk 
-                        dikonsumsi setelah kelas selesai. Terjalin pula kerjasama yang baik antar orang tua padahal ada yang tidak kenal 
-                        awalnya begitu juga anak-anak kelas 7 yang akhirnya bisa bertemu dengan teman kelasnya secara langsung setelah 
-                        di semester ganjil ini hanya bertemu di pembelajaran online. Semuanya hadir demi mewujudkan pembelajaran tatap muka 
-                        meskipun terbatas</span><a onclick="myFunction()" id="myBtn" style="color: #E33FAB;">Read more</a></p>
+                  <span class="badge border rounded-pill my-2 p-2" id="badge1">Pengumuman</span>
+                    <p>Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin kembali belajar di sekolah. Saya ingin bertemu dengan teman-teman sekelas saya. begitupun sebagian besar orang tua, mimpi mereka adalah melihat anaknya kembali ke aktivitas sekolah secara langsung. Orang tua selama ini banyak yang mengaku lelah karena anak-anaknya selama pandemi lebih banyak menghabiskan waktu <a href="BeritaExt.html">Read more...</a></p>
                         <div id="socialLinks" style="display: none;">
                         <h5 class="p-0">Bagikan Artikel</h5>
                   <div class="social-links">
@@ -126,60 +97,112 @@
     </section>
     <section>
         <div class="container px-0">
-            <div class="d-flex justify-content-between py-3 px-0">
-                <div>
-                    <a href="#" class="text-decoration-none">Semua</a>
-                    <a href="#" class="text-decoration-none">Berita</a>
-                    <a href="#" class="text-decoration-none">Pengumuman</a>
+          <div class="d-flex justify-content-between py-3 px-0">
+            <ul class="nav nav-underline nav-filter">
+              <li class="nav-item">
+                <a class="nav-link text-deco" href="#">Semua</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-deco" href="#">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-deco" href="#">Pengumuman</a>
+              </li>
+            </ul>
+          </div>
+            <div class="artikel row">
+              <div class="col-md-4">
+                <div class="  card border-0">
+                    <img src="img/n1.png" class="card-img-top img-fluid">
+                    <div class="card-body">
+                      <span class="badge border rounded-pill my-2 p-2" id="badge1">Pengumuman</span>
+                        <h6 class="card-title">12 Desember 2020</h6>
+                        <p class="card-text fw-bold">Kegiatan Belajar Mengajar Offline Dimulai</p>
+                    </div>
                 </div>
             </div>
-            <div class="artikel row justify-content-around">
-                <div class="col-md-4 col-sm-12 px-0">
-                    <img src="img/n1.png">
-                    <h6>12 Desember 2020</h6>
-                    <p class="fw-bold">Kegiatan Belajar Mengajar Offline Dimulai</p>
+            <div class="col-md-4">
+                <div class="  card border-0">
+                    <img src="img/n2.png" class="card-img-top img-fluid">
+                    <div class="card-body">
+                      <span class="badge border rounded-pill my-2 p-2" id="badge1">Pengumuman</span>
+                        <h6 class="card-title">13 Desember 2020</h6>
+                        <p class="card-text fw-bold">Penambilan Raport Semester Ganjil 2021 - 2022</p>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <img src="img/n2.png">
-                    <h6>13 Desember 2020</h6>
-                    <p class="fw-bold">Penambilan Raport Semester Ganjil 2021 - 2022</p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <img src="img/n3.png">
+            </div>
+                <div class="col-md-4 ">
+                  <div class="  card border-0">
+                    <img src="img/n3.png" class="img-fluid">
+                    <div class="card-body">
+                    <span class="badge border rounded-pill my-2 p-2" id="badge2">Berita</span>
                     <h6>14 Desember 2020</h6>
                     <p class="fw-bold">Jam Belajar Yang Efektif Pada Anak 8 - 12 Tahun</p>
                 </div>
-                    <div class="col-md-4 col-sm-12">
-                        <img src="img/n4.png">
+            </div>
+                </div>
+                    <div class="col-md-4 ">
+                      <div class="  card border-0">
+                        <img src="img/n4.png" class="img-fluid">
+                        <div class="card-body">
+                        <span class="badge border rounded-pill my-2 p-2" id="badge2">Berita</span>
                         <h6>15 Desember 2020</h6>
                         <p class="fw-bold">Kegiatan Belajar Mengajar Offline Dimulai</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <img src="img/n5.png">
+                    <div class="col-md-4 ">
+                      <div class="  card border-0">
+                        <img src="img/n5.png" class="img-fluid">
+                        <div class="card-body">
+                        <span class="badge border rounded-pill my-2 p-2" id="badge2">Berita</span>
                         <h6>16 Desember 2020</h6>
                         <p class="fw-bold">Penambilan Raport Semester Ganjil 2021 - 2022</p>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <img src="img/n6.png">
+                  </div>
+                </div>
+                    <div class="col-md-4 ">
+                      <div class="  card border-0">
+                        <img src="img/n6.png" class="img-fluid">
+                          <div class="card-body">
+                        <span class="badge border rounded-pill my-2 p-2" id="badge1">Pengumuman</span>
                         <h6>17 Desember 2020</h6>
                         <p class="fw-bold">Jam Belajar Yang Efektif Pada Anak 8 - 12 Tahun</p>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <img src="img/n7.png">
+                  </div>
+                </div>
+                    <div class="col-md-4 ">
+                      <div class="  card border-0">
+                        <img src="img/n7.png" class="img-fluid">
+                        <div class="card-body">
+                        <span class="badge border rounded-pill my-2 p-2" id="badge1">Pengumuman</span>
                         <h6>18 Desember 2020</h6>
                         <p class="fw-bold">Kegiatan Belajar Mengajar Offline Dimulai</p>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <img src="img/n8.png">
+                      </div>
+                    </div>
+                    <div class="col-md-4 ">
+                      <div class="  card border-0">
+                        <img src="img/n8.png" class="img-fluid">
+                        <div class="card-body">
+                        <span class="badge border rounded-pill my-2 p-2" id="badge2">Berita</span>
                         <h6>18 Desember 2020</h6>
                         <p class="fw-bold">Penambilan Raport Semester Ganjil 2021 - 2022</p>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <img src="img/n9.png">
+                      </div>
+                    </div>
+                    <div class="col-md-4 ">
+                      <div class="  card border-0">
+                        <img src="img/n9.png" class="img-fluid">
+                        <div class="card-body">
+                        <span class="badge border rounded-pill my-2 p-2" id="badge1">Pengumuman</span>
                         <h6>19 Desember 2020</h6>
                         <p class="fw-bold">Jam Belajar Yang Efektif Pada Anak 8 - 12 Tahun</p>
                     </div>
+                  </div>
+                </div>
             </div>
+            <p>Menampilkan <span id="cardCount">9</span> dari 21</p>
         </div>
     </section>    
     </main>
