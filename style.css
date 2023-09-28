@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    font-family: 'Poppins';
+}
 .btn {
-    color: white;
     background-color: #E33FAB;
+    color: white;
+    transition: background-color 0.3s, color 0.3s; 
+    border: solid none;
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+.btn:hover {
+    background-color: white;
+    color: #E33FAB;
 }
 
 .navbar{
@@ -20,7 +33,7 @@
     background-size: cover;
 }
 .Banner-logo{
-    height: 500px;
+    height: 100%;
     width: auto;
 }
 .Banner-content{
@@ -56,36 +69,49 @@
     width: auto;
 }
 .Kegiatan-content {
-    height: fit-content;
     width: auto;
     background-image: url(img/BG1.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    padding: 50px 0;
+}
+.Kegiatan-content .row {
+    flex-wrap: wrap;
 }
 .Kegiatan-content a {
     color: white;
     text-decoration: none;
 }
 
-.Kegiatan-content .card-group {
-    max-height: fit-content;
-    display: flex;
-    justify-content: space-around;
-    flex: wrap;
-}
 .Kegiatan-content .card{
-    height: max-content;
-    max-width: 300px;
-    margin: 20px;
-    border-radius: 20px;
+    height: 100%;
+    border-radius: 16px;
+    background: none;
 }
 .Kegiatan-content .card-footer{
     background-color: #6100C1;
-}
-.Kegiatan-content .card-footer a {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.Kegiatan-content .card-footer h5 {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.Kegiatan-content .card-footer svg{
+    margin-left: 5px;
+}
+@media (max-width: 800px) {
+    .Kegiatan-content {
+        padding: 20px 0;
+    }
 }
 #Kontak {
     color: white;
