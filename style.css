@@ -9,12 +9,18 @@ html {
     transition: background-color 0.3s, color 0.3s; 
     border: solid none;
     padding: 10px 20px; 
+    border-radius: 50px;
     cursor: pointer; 
 }
 
 .btn:hover {
     background-color: white;
     color: #E33FAB;
+}
+
+.custom-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .navbar{
@@ -49,10 +55,13 @@ html {
     background-color: #6100C1;
     background-size: contain;
 }
+.Banner-content2{
+    transform: translateY(60px);
+}
 .Banner2 img{
-    height: 500px;
+    height: 100%;
     width: auto;
-    bottom: 0;
+    padding-bottom: 50px;
 }
 .BeritaExt {
     color: white;
@@ -75,6 +84,8 @@ html {
     background-size: cover;
     color: white;
     padding: 50px 0;
+    border-radius: 70px;
+
 }
 .Kegiatan-content .row {
     flex-wrap: wrap;
@@ -116,10 +127,15 @@ html {
 #Kontak {
     color: white;
     background: url('img/BG2.png');
-    background-size: cover; 
+    background-size: cover;
+    border-radius: 80px; 
 }
 #Kontak .btn {
     background-color: #6100C1;
+}
+#Kontak .btn:hover {
+    background-color: white;
+    color: #6100C1;
 }
 #Info {
     color: black;
@@ -153,7 +169,10 @@ html {
     text-decoration-line: underline;
     text-decoration: #FF6F6F;
 }
-
+.nav-link.text-deco:hover {
+    text-decoration: #FF6F6F; 
+    color: black; 
+}
 .nav-link.active.text-deco {
     font-weight: bold;
 }
@@ -164,6 +183,12 @@ html {
 #badge2 {
     background-color: #FF6F6F;
 }
+#Galeri {
+    margin-top: 10vh;
+}
+#Galeri .card{
+    border: 0;
+}
 .custom-icon {
     width: 30px;
     height: 30px;
@@ -172,4 +197,20 @@ html {
     border: 2px solid #E33FAB;
     border-radius: 50%; 
     padding: 4px; 
+}
+.pagination {
+    border: none;
+    color: #787878;
+}
+.pagination .page-item .page-link{
+    background-color: transparent;
+    color: #787878;
+    border: none;
+}
+.pagination .page-item.active .page-link{
+    background-color: white;
+    color: #E33FAB;
+}
+#footer {
+    margin-top: 20vh;
 }
