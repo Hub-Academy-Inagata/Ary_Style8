@@ -6,6 +6,7 @@
     <title>Tentang Kita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -19,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="home.html">Beranda</a>
+                <a class="nav-link" href="index.html">Beranda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="Tentangkita.html">Tentang Kita</a>
@@ -45,12 +46,12 @@
             <div class="Banner2" id="Banner">
                 <div class="container Banner-content2">
                         <div class="row d-flex align-items-center justify-content-between">
-                            <div class="col-md-6  ">
-                                <h1>Tentang Kita</h1>
-                                <p>jelajahi  semua pengetahuan dan ilmu bermanfaat yang berguna untuk kehidupan anda kedepannya agar lebih bermanfaat dalam hidup anda dan orang lain</p>
+                            <div class="col-md-6">
+                                <h1 class="mt-5 fade-right">Tentang Kita</h1>
+                                <p class="fade-right">jelajahi  semua pengetahuan dan ilmu bermanfaat yang berguna untuk kehidupan anda kedepannya agar lebih bermanfaat dalam hidup anda dan orang lain</p>
                             </div>
                             <div class="col-md-6">
-                                <img src="img/BG0.png" class="img-fluid">
+                                <img src="img/BG0.png" class="img-fluid fade-up">
                             </div>
                         </div>              
                     </div>
@@ -86,24 +87,24 @@
           </div>
             <div class="col-md-3">
                 <img class="mb-3" src="img/Book.png">
-                  <h5 class="px-5">Menggunakan Kurikulum Terbaru</h5>
+                  <h5 class="px-5">Menggunakan<br> Kurikulum Terbaru</h5>
             </div>
             <div class="col-md-3">
                 <img class="mb-3" src="img/time.png">
-                  <h5 class="px-5">EfektifitasWaktu Saat Belajar Disekolah</h5>
+                  <h5 class="px-5">Efektifitas Waktu<br> Saat Belajar Disekolah</h5>
             </div>
             <div class="col-md-3">
                 <img class="mb-3" src="img/pen.png">
-                  <h5 class="px-5">Penyaluran Bakat dan Minat Siswa</h5>
+                  <h5 class="px-5">Penyaluran Bakat <br> dan Minat Siswa</h5>
             </div>
             <div class="col-md-3">
                 <img class="mb-3" src="img/Book.png">
-                  <h5 class="px-5">Mengawasi Tumbuh Kembang</h5>
+                  <h5 class="px-5">Mengawasi <br> Tumbuh Kembang</h5>
             </div>
         </div>
       </div>
     </section>
-    <section>
+    <section style="margin-top: 20vh; margin-bottom: 20vh;">
       <div class="container my-5">
           <div class="d-flex justify-content-center align-items-center">
               <div class="col-6 text-center my-3">
@@ -111,15 +112,31 @@
                   <h5>Berikut adalah video profil dari sekolah Kami</h5>
               </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-12 text-center">
-              <div class="card ratio ratio-21x9">
-                <iframe class="embed-responsive-item" src="img/video1.mp4"  controls></iframe>
-              </div>
+              <div class="position-relative text-center">
+              <img src="img/circle-play.png" id="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
+              </img>
+              <img src="img/bgv.png" class="img-fluid mx-auto" id="bgv">
             </div>
-        </div> 
+              <!-- Modal Video -->
+              <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content position-relative">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <!-- Video dari YouTube (dengan iframe) -->
+                            <div class="ratio ratio-16x9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ExqIAktOOfE " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+          </div>
       </div>
-  </section>
+  </section>  
   <section >
     <div class="container my-5" id="staff">
         <div class="row d-flex">
@@ -128,7 +145,7 @@
                     <h1>Guru dan Staff Sekolah</h1>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p1.png" class="card-img-top" alt="Mrs. Y">
                           <div class="card-body">
@@ -138,7 +155,7 @@
                       </div>
                   </div>
                   
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p2.png" class="card-img-top" alt="Mr. X">
                           <div class="card-body">
@@ -148,7 +165,7 @@
                       </div>
                   </div>
                   
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p3.png" class="card-img-top" alt="Mrs. Y">
                           <div class="card-body">
@@ -158,7 +175,7 @@
                       </div>
                   </div>
                   
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p4.png" class="card-img-top" alt="Mr. X">
                           <div class="card-body">
@@ -168,7 +185,7 @@
                       </div>
                   </div>
                   
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p5.png" class="card-img-top" alt="Mrs. Y">
                           <div class="card-body">
@@ -178,7 +195,7 @@
                       </div>
                   </div>
                   
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p6.png" class="card-img-top" alt="Mr. X">
                           <div class="card-body">
@@ -188,7 +205,7 @@
                       </div>
                   </div>
                   
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p7.png" class="card-img-top" alt="Mrs. Y">
                           <div class="card-body">
@@ -198,7 +215,7 @@
                       </div>
                   </div>
                   
-                  <div class="col-lg-3 col-sm-12">
+                  <div class="col-lg-3 col-sm-6">
                       <div class="card">
                           <img src="img/p8.png" class="card-img-top" alt="Mr. X">
                           <div class="card-body">
@@ -212,7 +229,7 @@
         </div>
     </div>
   </section>
-  <section class="my-5">
+  <section style="margin-top: 20vh; margin-bottom: 20vh;">
     <div class="container" id="Partner">
         <div class="d-flex justify-content-center align-items-center">
           <div class="col-6 text-center">
@@ -220,26 +237,29 @@
             <p>Kami Bekerja sama dengan berbagai lembaga Diseluruh Indonesia untuk menyalurkan bakat siswa kami</p>
         </div>
       </div>
-        <div class="row align-items-center justify-content-center mt-3 p-0">
-          <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-            <img src="img/s1.png">
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 text-center mx-auto">
-            <img src="img/s0.png">
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-            <img src="img/s2.png">
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-            <img src="img/s3.png">
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-            <img src="img/s4.png">
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-            <img src="img/s1.png">
-          </div>
+      <div class="row justify-content-around align-items-center">
+        <div class="col-lg-1 col-md-4 col-sm-6 text-center my-5">
+          <img src="img/s1.png">
         </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 text-center my-5">
+          <img src="img/s0.png">
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 text-center my-5">
+          <img src="img/s2.png">
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 text-center my-5">
+          <img src="img/s3.png">
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 text-center my-5">
+          <img src="img/s4.png">
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 text-center my-5">
+          <img src="img/s3.png">
+        </div>
+        <div class="col-lg-1 col-md-4 col-sm-6 text-center my-5">
+          <img src="img/s4.png">
+        </div>
+      </div>
     </div>
 </section>
     </main>
@@ -318,8 +338,21 @@
         <div class="credits">
       </div>
     </footer>
-</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
-    </script>
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    const scrollPos = window.scrollY;
+
+    if (scrollPos > 100) {
+      navbar.style.backgroundColor = '#6100C1'; 
+    } else {
+      navbar.style.backgroundColor = 'transparent'; 
+    }
+  });
+</script>
+</body> 
 </html>

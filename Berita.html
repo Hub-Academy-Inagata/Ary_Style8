@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="home.html">Beranda</a>
+                <a class="nav-link" href="index.html">Beranda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Tentangkita.html">Tentang Kita</a>
@@ -46,12 +46,12 @@
             <div class="Banner2" id="Banner">
                 <div class="container Banner-content2">
                         <div class="row d-flex align-items-center justify-content-between">
-                            <div class="col-md-6 my-5 ">
+                            <div class="col-md-6 my-5 fade-right">
                                 <h1>Berita</h1>
                                 <p class="d-none d-sm-block">Halaman Yang Akan Memberikan Pemberitahuan
                                   dan Pengetahuan Untuk Anda</p>
                             </div>
-                            <div class="col-md-6 text-end">
+                            <div class="col-md-6 text-end fade-up">
                                 <img src="img/BG0.png" class="img-fluid">
                             </div>
                         </div>              
@@ -302,5 +302,17 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
     </script>
     <script src="custom.js"></script>
+    <script>
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const scrollPos = window.scrollY;
+    
+        if (scrollPos > 100) {
+          navbar.style.backgroundColor = '#6100C1'; 
+        } else {
+          navbar.style.backgroundColor = 'transparent'; 
+        }
+      });
+    </script>
 </body>
 </html>
