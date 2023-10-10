@@ -105,6 +105,22 @@ body {
     }
 }
 
+.fade-left {
+    opacity: 0; 
+    animation: fadeInLeft 1s ease forwards; 
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
 .fade-up {
     opacity: 0; 
     animation: fadeInUp 1s ease forwards; 
@@ -120,6 +136,22 @@ body {
         transform: translateY(0); 
     }
 }
+.fade-down {
+    opacity: 0; 
+    animation: fadeInDown 1s ease forwards; 
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
 @media (max-width: 1200px) {
     .Banner2{
         padding-top: 40px;
@@ -143,6 +175,19 @@ body {
     height: 100px;
     width: auto;
 }
+
+@media screen and (max-width: 575px) {
+    #informasi{
+        margin: 0;
+    }
+    .artikel{
+      height: auto;
+      width: fit-content;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
 .Kegiatan-content {
     width: auto;
     background-image: url(img/BG1.png);

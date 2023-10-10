@@ -24,6 +24,17 @@
         });
 
         filterCards("semua");
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const scrollPos = window.scrollY;
+        
+            if (scrollPos > 100) {
+              navbar.style.backgroundColor = '#6100C1'; 
+            } else {
+              navbar.style.backgroundColor = 'transparent'; 
+            }
+          });
 
         
 
