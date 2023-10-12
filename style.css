@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Poppins';
+    min-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .btn {
     background-color: #E33FAB;
@@ -182,7 +185,7 @@ body {
     }
     .artikel{
       height: auto;
-      width: fit-content;
+      width: auto;
       margin-right: 10px;
       margin-left: 10px;
     }
@@ -229,6 +232,13 @@ body {
 .Kegiatan-content .card-footer svg{
     margin-left: 5px;
 }
+@media screen and (max-width: 598px) {
+    .artikel-card{
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+    }
+  }
 @media (max-width: 500px) {
     .Kegiatan-content {
         padding: 20px 0;

@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="custom.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -64,7 +65,7 @@
             <div class="container" id="informasi">
               <h1 class="my-3">Informasi Terbaru</h1>
               <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-lg-12 px-1">
+                <div class="col-lg-12 px-1" data-aos="fade-up" data-aos-duration="2000">
                   <img src="img/bus.png">
                 </div>
                 <div class="col-lg-12 px-1">
@@ -98,7 +99,7 @@
     <section>
         <div class="container artikel px-0">
           <div class="d-flex justify-content-between py-3 px-0">
-            <ul class="nav nav-underline nav-filter">
+            <ul class="nav nav-underline nav-filter" data-aos="fade-up" data-aos-duration="1000">
               <li class="nav-item">
                 <a class="nav-link text-deco" href="#">Semua</a>
               </li>
@@ -111,7 +112,7 @@
             </ul>
           </div>
             <div class="artikel-card row">
-              <div class="col-md-4 col-sm-6 col-12">
+              <div class="col-md-4 col-sm-6 col-10">
                 <div class=" card border-0">
                     <img src="img/n1.png" class="card-img-top img-fluid">
                     <div class="card-body">
@@ -121,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-12">
+            <div class="col-md-4 col-sm-6 col-10">
                 <div class="  card border-0">
                     <img src="img/n2.png" class="card-img-top img-fluid">
                     <div class="card-body">
@@ -131,7 +132,7 @@
                     </div>
                 </div>
             </div>
-                <div class="col-md-4 col-sm-6 col-12">
+                <div class="col-md-4 col-sm-6 col-10">
                   <div class="  card border-0">
                     <img src="img/n3.png" class="img-fluid">
                     <div class="card-body">
@@ -141,7 +142,7 @@
                 </div>
             </div>
                 </div>
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-10">
                       <div class="card border-0">
                         <img src="img/n4.png" class="img-fluid">
                         <div class="card-body">
@@ -151,7 +152,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-10">
                       <div class="card border-0">
                         <img src="img/n5.png" class="img-fluid">
                         <div class="card-body">
@@ -161,7 +162,7 @@
                     </div>
                   </div>
                 </div>
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-10">
                       <div class="  card border-0">
                         <img src="img/n6.png" class="img-fluid">
                           <div class="card-body">
@@ -171,7 +172,7 @@
                     </div>
                   </div>
                 </div>
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-10">
                       <div class="  card border-0">
                         <img src="img/n7.png" class="img-fluid">
                         <div class="card-body">
@@ -181,8 +182,8 @@
                     </div>
                       </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
-                      <div class="  card border-0">
+                    <div class="col-md-4 col-sm-6 col-10">
+                      <div class="card border-0">
                         <img src="img/n8.png" class="img-fluid">
                         <div class="card-body">
                         <span class="badge border rounded-pill my-2 p-2" id="badge2">Berita</span>
@@ -191,7 +192,7 @@
                     </div>
                       </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-10">
                       <div class="  card border-0">
                         <img src="img/n9.png" class="img-fluid">
                         <div class="card-body">
@@ -226,8 +227,8 @@
     </main>
     <footer>
       <div class="container mt-5 px-1" id="footer">
-        <div class="row mb-5">
-          <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="row mb-5 justify-content-center" style="max-width:100%;">
+          <div class="col-lg-3 col-md-3 col-10">
             <div>
               <svg class="g-0" width="100" height="54" viewBox="0 0 128 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 28.0517H6.37527V0H0V28.0517Z" fill="#4B4B4B"/>
@@ -246,7 +247,7 @@
                 <path d="M107.143 37.4028L106.616 41.5883H111.276L111.188 42.7163L106.498 42.7757C106.381 43.8839 106.254 45.0317 106.117 46.2191C106 47.4064 105.893 48.5542 105.795 49.6625C105.697 50.7707 105.648 51.77 105.648 52.6606C105.648 53.0366 105.668 53.4324 105.707 53.848C105.766 54.2437 105.893 54.5802 106.088 54.8572C106.283 55.1145 106.596 55.2431 107.026 55.2431C107.221 55.2431 107.456 55.2035 107.729 55.1244C108.023 55.0452 108.345 54.8572 108.697 54.5604C109.048 54.2635 109.41 53.7985 109.781 53.1652L110.543 53.6698C109.977 54.6791 109.361 55.4509 108.697 55.9852C108.052 56.4998 107.26 56.757 106.322 56.757C105.189 56.757 104.398 56.4107 103.948 55.7181C103.499 55.0056 103.274 54.1844 103.274 53.2543C103.274 52.146 103.333 50.6618 103.45 48.8016C103.587 46.9414 103.782 44.9426 104.036 42.8054L101.427 42.8351L101.515 41.5883C102.864 41.5883 103.86 41.2222 104.505 40.49C105.15 39.7578 105.658 38.7287 106.029 37.4028H107.143Z" fill="#4B4B4B"/>
                 <path d="M119.725 41.2618C120.429 41.2618 121.093 41.3706 121.719 41.5883C122.344 41.806 122.852 42.1622 123.243 42.657C123.634 43.1517 123.829 43.8245 123.829 44.6755C123.829 45.4869 123.555 46.1894 123.008 46.7831C122.461 47.3768 121.748 47.8715 120.869 48.2673C119.989 48.6433 119.051 48.95 118.055 49.1875C117.058 49.425 116.101 49.5932 115.182 49.6921C115.182 53.4126 116.296 55.2728 118.524 55.2728C119.383 55.2728 120.233 54.9859 121.074 54.412C121.934 53.8381 122.686 52.9277 123.331 51.681L124.298 52.245C123.477 53.8084 122.559 54.9562 121.543 55.6884C120.527 56.4008 119.354 56.757 118.025 56.757C116.169 56.757 114.801 56.1732 113.922 55.0056C113.042 53.8183 112.603 52.2648 112.603 50.3452C112.603 49.1974 112.749 48.0793 113.042 46.9909C113.336 45.9024 113.775 44.9328 114.361 44.0818C114.948 43.2111 115.69 42.5283 116.589 42.0336C117.488 41.5191 118.533 41.2618 119.725 41.2618ZM119.315 42.2711C118.416 42.2711 117.674 42.5778 117.087 43.1913C116.521 43.8047 116.081 44.5963 115.768 45.566C115.475 46.5357 115.29 47.5549 115.211 48.6235C116.247 48.485 117.234 48.2376 118.172 47.8814C119.11 47.5252 119.882 47.07 120.488 46.5159C121.093 45.942 121.396 45.2791 121.396 44.5271C121.396 43.8938 121.22 43.3595 120.869 42.9241C120.536 42.4887 120.019 42.2711 119.315 42.2711Z" fill="#4B4B4B"/>
                 </svg>            
-              <p class="my-3">Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk kehidupan yang lebih bermanfaat</p>
+              <p class="my-3" style="max-width: max-content;">Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk kehidupan yang lebih bermanfaat</p>
             </div>
               <div class="social-links mb-3">
                 <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +266,7 @@
                   </svg>
               </div>
             </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 .footer-link">
+          <div class="col-lg-3 col-md-3 col-10 .footer-link">
             <h5 class="fw-bold">Informasi</h5>
             <ul class="p-0 mt-3">
               <li>
@@ -274,7 +275,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 .footer-link">
+          <div class="col-lg-3 col-md-3 col-10 .footer-link">
             <h5 class="fw-bold">Tentang</h5>
             <ul class="p-0 mt-3">
             <li>
@@ -283,7 +284,7 @@
             </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-12 .footer-link">
+          <div class="col-lg-3 col-md-3 col-10 .footer-link">
             <h5 class="fw-bold">Kantor Kami</h5>
               <p class="mt-3">
                 Indonesia<br>
@@ -303,5 +304,9 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
     </script>
     <script src="custom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
